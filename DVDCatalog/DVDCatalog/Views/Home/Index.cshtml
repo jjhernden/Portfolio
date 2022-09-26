@@ -1,0 +1,64 @@
+﻿@model CatalogModel
+@{
+    ViewData["Title"] = "DVD Catalog";
+}
+
+@if (Model.Catalog.Count == 0)
+{
+    <h1>No Movies Available in Catalogue</h1>
+}
+else
+{
+    <div>
+    @using (Html.BeginForm("Index","Home", FormMethod.Post))
+    { 
+        <input name="title" type="text"/><input type="submit" value="Search" /> 
+    }
+    </div>
+    <div class="movie-table">
+    <table id="movie-table">
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Genre</th>
+            <th>Director</th>
+            <th>Date Released</th>
+            <th>Star</th>
+            <th>Rating</th>
+        </tr>
+        @if(Model.Catalog.Count == 0)
+        {
+            <tr>
+                <th>No Movies Available in Catalog</th>
+        </tr>
+    }
+    else
+    {
+        @foreach(DVDCatalog.DAOs.MovieDAO movie in Model.Catalog)
+        {
+            <tr>
+            <td>@movie.Title</td>
+            <td>@movie.Description</td>
+            <td>@movie.Genre</td>
+            <td>@movie.Director</td>
+            <td>@movie.DateReleased.Month/@movie.DateReleased.Day/@movie.DateReleased.Year</td>
+            <td>@movie.MovieStar</td>
+            <td>@movie.Rating</td>
+            <td>@using (Html.BeginForm("DeleteMovie", "Home", new { title = movie.Title },FormMethod.Post))
+                {
+                    <input type="submit" value="Delete" />
+                }
+            </td>
+            </tr>
+        }
+    }
+    </table>
+</div>
+<div>
+    @using (Html.BeginForm("Index","Home", FormMethod.Get))
+        {
+                
+            <input type="submit" value="View All" />
+        }
+</div>
+}
