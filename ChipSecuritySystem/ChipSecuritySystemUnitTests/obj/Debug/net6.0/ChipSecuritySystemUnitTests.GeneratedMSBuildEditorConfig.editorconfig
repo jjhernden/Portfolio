@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ChipSecuritySystemUnitTests
-build_property.ProjectDir = C:\Users\jakeh\OneDrive\Documents\GitHub\Portfolio\ChipSecuritySystem\ChipSecuritySystemUnitTests\
+build_property.ProjectDir = C:\Code\Portfolio\ChipSecuritySystem\ChipSecuritySystemUnitTests\
