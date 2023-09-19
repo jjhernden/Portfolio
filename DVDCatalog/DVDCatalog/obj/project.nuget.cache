@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4556LRMAajxnT9eTcZ9eSjbI4LZ8bZNYcs3LzqKRy2DOOp8Z4g31YKIcjeAtsQ1X4gH7XIQz+YIqblvxX5YPxQ==",
+  "dgSpecHash": "yY1HA7EWl4kWNjZeNrU2rvZKLyWBl36e6k0eeuDZpFtjysGlfjM1p8/dtVnCRAtAjH/v/AQDjQ5prXxJEHZPMQ==",
   "success": true,
-  "projectFilePath": "C:\\Code\\DVDCatalog\\DVDCatalog\\DVDCatalog.csproj",
+  "projectFilePath": "C:\\Code\\Portfolio\\DVDCatalog\\DVDCatalog\\DVDCatalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakeh\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\jakeh\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

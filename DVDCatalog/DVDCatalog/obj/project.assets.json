@@ -487,11 +487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code\\DVDCatalog\\DVDCatalog\\DVDCatalog.csproj",
+      "projectUniqueName": "C:\\Code\\Portfolio\\DVDCatalog\\DVDCatalog\\DVDCatalog.csproj",
       "projectName": "DVDCatalog",
-      "projectPath": "C:\\Code\\DVDCatalog\\DVDCatalog\\DVDCatalog.csproj",
+      "projectPath": "C:\\Code\\Portfolio\\DVDCatalog\\DVDCatalog\\DVDCatalog.csproj",
       "packagesPath": "C:\\Users\\jakeh\\.nuget\\packages\\",
-      "outputPath": "C:\\Code\\DVDCatalog\\DVDCatalog\\obj\\",
+      "outputPath": "C:\\Code\\Portfolio\\DVDCatalog\\DVDCatalog\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jakeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
