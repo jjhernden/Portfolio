@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj": {}
+    "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj": {}
   },
   "projects": {
-    "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj": {
+    "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj",
+        "projectUniqueName": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj",
         "projectName": "ChipSecuritySystemUnitTests",
-        "projectPath": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj",
+        "projectPath": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj",
         "packagesPath": "C:\\Users\\jakeh\\.nuget\\packages\\",
-        "outputPath": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\obj\\",
+        "outputPath": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jakeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj": {
-                "projectPath": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj"
+              "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj": {
+                "projectPath": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj"
               }
             }
           }
@@ -88,11 +88,11 @@
         }
       }
     },
-    "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj": {
+    "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj",
+        "projectUniqueName": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj",
         "projectName": "ChipSecuritySystem",
-        "projectPath": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj",
+        "projectPath": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystem\\ChipSecuritySystem.csproj",
         "frameworks": {
           "net48": {
             "projectReferences": {}

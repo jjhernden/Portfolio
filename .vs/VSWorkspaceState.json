@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DVDCatalog",
+    "\\DVDCatalog\\DVDCatalog",
+    "\\DVDCatalog\\DVDCatalog\\Controllers"
   ],
-  "SelectedNode": "\\DVDCatalogWebApplication",
+  "SelectedNode": "\\DVDCatalog\\DVDCatalog\\Controllers\\HomeController.cs",
   "PreviewInSolutionExplorer": false
 }

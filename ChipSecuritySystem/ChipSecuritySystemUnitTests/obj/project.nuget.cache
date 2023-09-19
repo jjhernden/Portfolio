@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "svesF7b6nRQqro1MQXLtkAsysZtYps39vDN693CYUARyM+oBPjz9sx8vMn/nXdqY1yUQCxTG51caMe3d6tdumg==",
+  "dgSpecHash": "EjQxndMDS0XnyLgSEf01IKcuzmE6d7qthRlfQCUmzlmNFTVA7wpHmrFy6Iz93GhCbx/KS2k8GNhtp9he1jHeRQ==",
   "success": true,
-  "projectFilePath": "C:\\Code\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj",
+  "projectFilePath": "C:\\Code\\Portfolio\\ChipSecuritySystem\\ChipSecuritySystemUnitTests\\ChipSecuritySystemUnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jakeh\\.nuget\\packages\\castle.core\\5.1.0\\castle.core.5.1.0.nupkg.sha512",
     "C:\\Users\\jakeh\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
