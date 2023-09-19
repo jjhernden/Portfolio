@@ -684,11 +684,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jakeh\\OneDrive\\Documents\\GitHub\\Portfolio\\WebService\\WebService\\EmployeeWebService.csproj",
+      "projectUniqueName": "C:\\Code\\Portfolio\\WebService\\WebService\\EmployeeWebService.csproj",
       "projectName": "EmployeeWebService",
-      "projectPath": "C:\\Users\\jakeh\\OneDrive\\Documents\\GitHub\\Portfolio\\WebService\\WebService\\EmployeeWebService.csproj",
+      "projectPath": "C:\\Code\\Portfolio\\WebService\\WebService\\EmployeeWebService.csproj",
       "packagesPath": "C:\\Users\\jakeh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jakeh\\OneDrive\\Documents\\GitHub\\Portfolio\\WebService\\WebService\\obj\\",
+      "outputPath": "C:\\Code\\Portfolio\\WebService\\WebService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jakeh\\AppData\\Roaming\\NuGet\\NuGet.Config",
