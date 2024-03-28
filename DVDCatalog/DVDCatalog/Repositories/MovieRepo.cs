@@ -43,7 +43,7 @@ namespace DVDCatalog.Repositories
             MovieDAO movie = new MovieDAO();
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
-                movie = connection.QuerySingleOrDefault<MovieDAO>(@$"SELECT * FROM Movie WHERE Title = '{title}'");
+                movie = connection.QuerySingleOrDefault<MovieDAO>(@$"SELECT * FROM Movie WHERE Title LIKE '%{title}%'");
             }
             return movie;
         }
@@ -55,6 +55,31 @@ namespace DVDCatalog.Repositories
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
                     connection.Execute(@$"DELETE Movie WHERE Title = '{title}'");
+                }
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public bool EditMovie(MovieDAO movie)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Execute($@"
+                                        UPDATE Movie 
+                                        SET Title = '{movie.Title}',
+                                            Description = '{movie.Description}',
+                                            Genre = '{movie.Genre}',
+                                            Director = '{movie.Director}',
+                                            DateReleased = '{movie.DateReleased}', 
+                                            Rating = '{movie.Rating}', 
+                                            MovieStar = '{movie.MovieStar}'
+                                        WHERE Title = '{movie.Title}'");
                 }
                 return true;
             }

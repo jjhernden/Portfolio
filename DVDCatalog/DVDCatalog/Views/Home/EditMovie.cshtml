@@ -1,23 +1,24 @@
 ﻿@model MovieModel
 @{
-    ViewData["Title"] = "Add New Movie";
+    ViewData["Title"] = "Edit Movie";
 }
 
-<h1>Add a New Movie</h1>
-@using (Html.BeginForm("AddMovie", "Home", FormMethod.Post))
+@using(@Html.BeginForm("SubmitEditMovie","Home", FormMethod.Post))
 {
     <table>
         <tr>
             <td>Title:</td>
-            <td>@Html.TextBoxFor(model => model.Title)</td>
+            <td>
+                @Html.EditorFor(x => x.Title)
+            </td>
         </tr>
         <tr>
             <td>Description:</td>
-            <td>@Html.TextBoxFor(model => model.Description)</td>
+            <td>@Html.EditorFor(x => x.Description)</td>
         </tr>
         <tr>
             <td>Director:</td>
-            <td>@Html.TextBoxFor(model => model.Director)</td>
+            <td>@Html.EditorFor(x => x.Director)</td>
         </tr>
         <tr>
             <td>Genre:</td>
@@ -25,18 +26,18 @@
         </tr>
          <tr>
             <td>Movie Star:</td>
-            <td>@Html.TextBoxFor(model => model.MovieStar)</td>
+            <td>@Html.EditorFor(x => x.MovieStar)</td>
         </tr>
         <tr>
             <td>Date Released:</td>
-            <td>@Html.TextBoxFor(model => model.DateReleased)</td>
+            <td>@Html.EditorFor(x => x.DateReleased)</td>
         </tr>
         <tr>
             <td>Rating:</td>
-            <td>@Html.TextBoxFor(model => model.Rating)</td>
+            <td>@Html.EditorFor(x => x.Rating)</td>
         </tr>
         <tr>
-            <td><input type="submit" value="Submit" /></td>
+            <td><input type="submit" value="Submit"/></td>
         </tr>
     </table>
 }

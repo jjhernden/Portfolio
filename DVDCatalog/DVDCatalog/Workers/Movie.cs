@@ -31,5 +31,10 @@ namespace DVDCatalog.Workers
         {
             return repo.DeleteMovie(title);
         }
+
+        public bool EditMovie(MovieDAO movie)
+        {
+            return repo.EditMovie(movie);
+        }
     }
 }

@@ -45,8 +45,9 @@ namespace DVDCatalog.Controllers
         }
 
         [HttpPost]
-        public IActionResult AddMovie(MovieDAO movieDAO)
+        public IActionResult AddMovie(MovieModel movieModel)
         {
+            MovieDAO movieDAO = new MovieDAO(movieModel);
             bool addNewMovieSuccess = movie.AddNewMovie(movieDAO);
             
             if(addNewMovieSuccess)
@@ -62,6 +63,27 @@ namespace DVDCatalog.Controllers
         {
             bool deleteMovieSuccess = movie.DeleteMovie(title);
             if(deleteMovieSuccess)
+            {
+                return View("Index", new CatalogModel(movie.GetAllMovies()));
+            }
+            return View("Error");
+        }
+
+        [HttpPost]
+        public IActionResult EditMovie(string title)
+        {
+            MovieDAO searchedMovie = movie.MovieSearch(title);
+            MovieModel model = new MovieModel(searchedMovie);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult SubmitEditMovie(MovieModel movieModel)
+        {
+            bool successfulEdit = movie.EditMovie(new MovieDAO(movieModel));
+
+            if(successfulEdit)
             {
                 return View("Index", new CatalogModel(movie.GetAllMovies()));
             }

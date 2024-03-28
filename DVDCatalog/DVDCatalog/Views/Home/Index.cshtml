@@ -26,10 +26,10 @@ else
             <th>Star</th>
             <th>Rating</th>
         </tr>
-        @if(Model.Catalog.Count == 0)
-        {
-            <tr>
-                <th>No Movies Available in Catalog</th>
+    @if(Model.Catalog.Count == 0)
+    {
+        <tr>
+        <th>No Movies Available in Catalog</th>
         </tr>
     }
     else
@@ -45,9 +45,14 @@ else
             <td>@movie.MovieStar</td>
             <td>@movie.Rating</td>
             <td>@using (Html.BeginForm("DeleteMovie", "Home", new { title = movie.Title },FormMethod.Post))
-                {
-                    <input type="submit" value="Delete" />
-                }
+                    {
+                        <input type="submit" value="Delete" />
+                    }
+            </td>
+            <td>@using (Html.BeginForm("EditMovie", "Home", new {title = movie.Title}, FormMethod.Post))
+                    {
+                        <input type ="submit" value="Edit"/>      
+                    }
             </td>
             </tr>
         }

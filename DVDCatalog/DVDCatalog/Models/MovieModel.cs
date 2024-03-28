@@ -1,11 +1,11 @@
-﻿using DVDCatalog.Models;
-namespace DVDCatalog.DAOs
+﻿using DVDCatalog.DAOs;
+namespace DVDCatalog.Models
 {
-    public class MovieDAO
+    public class MovieModel
     {
-        public MovieDAO() { }
+        public MovieModel() { }
 
-        public MovieDAO(MovieModel movie)
+        public MovieModel(MovieDAO movie)
         {
             Title = movie.Title;
             Description = movie.Description;
@@ -16,7 +16,7 @@ namespace DVDCatalog.DAOs
             Rating = movie.Rating;
         }
 
-        public MovieDAO(string title, string description, string genre, string director, DateTime dateReleased, string movieStar, double rating)
+        public MovieModel(string title, string description, string genre, string director, DateTime dateReleased, string movieStar, double rating)
         {
             Title = title;
             Description = description;
@@ -40,5 +40,6 @@ namespace DVDCatalog.DAOs
         public string MovieStar { get; set; }
 
         public double Rating { get; set; }
+
     }
 }
